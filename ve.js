@@ -1,13 +1,14 @@
 String.prototype.замѣнiть = String.prototype.replace;
-HTMLElement.prototype.ящерскоеПолѣ = HTMLElement.prototype.innerHTML;
-HTMLElement.prototype.ящерскоеПолѣ = HTMLElement.prototype.innerHTML;
+Node.prototype.ящерскоеПолѣ = Node.prototype.innerHTML;
+Node.prototype.найтиЯщера =  Node.prototype.querySelector;
+Node.prototype.найтиВсехЯщеров = Node.prototype.querySelectorAll;
 
 const русь = { };
 русь.молвить = console.log;
 
 const странiца = {};
-странiца.найтиЯщера = document.querySelector
-странiца.найтиВсехЯщеров = document.querySelectorAll
+странiца.найтиЯщера = (selector) => document.querySelector(selector);
+странiца.найтиВсехЯщеров = (selectors) => document.querySelectorAll(selectors);
 
 const ЛовитѣльЯщеров = RegExp;
 
